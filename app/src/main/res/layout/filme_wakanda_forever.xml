@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/fundoFilmeSelecionado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/telafundowakanda" />
+
+    <ImageView
+        android:id="@+id/botaoVoltar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/icone_voltar" />
+
+    <TextView
+        android:id="@+id/tituloFilme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="WAKANDA FOREVER"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descricaoFilme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tituloFilme"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Após a morte do Rei T'Challa, Wakanda enfrenta novas ameaças enquanto luta para encontrar seu novo caminho."
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/duracaoFilme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descricaoFilme"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:text="Duração: 2h 41m"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/valorIngresso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/duracaoFilme"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:text="Valor do ingresso: R$ 25,00"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/botaoImagem"
+        android:layout_width="175dp"
+        android:layout_height="79dp"
+        android:layout_below="@id/valorIngresso"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/btncompraringresso" />
+</RelativeLayout>

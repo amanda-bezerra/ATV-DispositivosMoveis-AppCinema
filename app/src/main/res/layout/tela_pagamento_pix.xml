@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundofilmeselecionado"> <!-- Ajuste para o fundo desejado -->
+
+    <!-- Botão de Voltar -->
+    <ImageView
+        android:id="@+id/botaoVoltarPagamento"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/icone_voltar"
+        android:contentDescription="Botão de Voltar" />
+
+    <!-- Título "Pagamento" -->
+    <TextView
+        android:id="@+id/tituloPagamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:text="Pagamento"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Contêiner do método Pix -->
+    <LinearLayout
+        android:id="@+id/metodoPagamentoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tituloPagamento"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Método de pagamento Pix -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_borde"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pix" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="Pix"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/opcaoPix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botão Finalizar -->
+    <ImageView
+        android:id="@+id/btnFinalizarPagamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/btn_finalizar"
+        android:contentDescription="Botão Finalizar Pagamento" />
+</RelativeLayout>

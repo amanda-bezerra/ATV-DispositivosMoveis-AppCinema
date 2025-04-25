@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fundo da tela -->
+    <ImageView
+        android:id="@+id/fundoFilmeSelecionado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/telafundoonepiece" />
+
+    <!-- Botão de voltar -->
+    <ImageView
+        android:id="@+id/botaoVoltar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/icone_voltar" />
+
+    <!-- Título do filme -->
+    <TextView
+        android:id="@+id/tituloFilme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="ONE PIECE RED"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Descrição do filme -->
+    <TextView
+        android:id="@+id/descricaoFilme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tituloFilme"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="A tripulação de Chapéu de Palha enfrenta um novo desafio em busca de um lendário tesouro."
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!-- Duração do filme -->
+    <TextView
+        android:id="@+id/duracaoFilme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descricaoFilme"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:text="Duração: 1h 55m"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Valor do ingresso -->
+    <TextView
+        android:id="@+id/valorIngresso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/duracaoFilme"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:text="Valor do ingresso: R$ 20,00"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Botão de comprar ingresso -->
+    <ImageView
+        android:id="@+id/botaoImagem"
+        android:layout_width="175dp"
+        android:layout_height="79dp"
+        android:layout_below="@id/valorIngresso"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/btncompraringresso" />
+</RelativeLayout>

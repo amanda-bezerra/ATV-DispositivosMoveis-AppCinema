@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fundo_inicial_start">#311560</color>
+    <color name="fundo_inicial_end">#16141C</color>
+    <color name="botao_entrar_start">#3B1578</color>
+    <color name="botao_entrar_end">#5172B3</color>
+    <color name="texto_branco">#FFFFFF</color>
+    <color name="stroke_cor_checkbox">#321562</color>
+    <color name="email_senha_stroke">#24153C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+
+</resources>

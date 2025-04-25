@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CineSIGAA</string>
+    <string name="search_hint">Pesquisar</string>
+    <string name="title_promotions">Promoções</string>
+    <string name="title_now_showing">Filmes em Cartaz</string>
+    <string name="search_icon_description">Ícone de Pesquisa</string>
+    <string name="notification_icon_description">Ícone de Notificação</string>
+    <string name="profile_icon_description">Ícone de Perfil</string>
+    <string name="banner_promotion_description">Banner de Promoção</string>
+</resources>

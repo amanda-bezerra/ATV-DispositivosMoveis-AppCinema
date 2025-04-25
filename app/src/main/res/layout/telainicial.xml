@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fundo do aplicativo -->
+    <ImageView
+        android:id="@+id/fundoApp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fundoapp" />
+
+    <!-- Botão de voltar no canto superior esquerdo -->
+    <ImageView
+        android:id="@+id/botaoVoltar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/icone_voltar" />
+
+    <!-- Ícone de perfil no canto superior direito -->
+    <ImageView
+        android:id="@+id/iconePerfil"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/perfil_fotodeperfil" />
+
+    <!-- Ícone de notificações ao lado do perfil -->
+    <ImageView
+        android:id="@+id/iconeSininho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@id/iconePerfil"
+        android:src="@drawable/sininho" />
+
+    <!-- Texto Promoções -->
+    <TextView
+        android:id="@+id/textPromocoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iconePerfil"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Promoções"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Banner de promoções passando automaticamente -->
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/textPromocoes"
+        android:layout_marginTop="8dp"
+        android:flipInterval="3000"
+        android:autoStart="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/banner1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/banner2" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/banner3" />
+    </ViewFlipper>
+
+    <!-- Texto Filmes em Cartaz -->
+    <TextView
+        android:id="@+id/textFilmesEmCartaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewFlipper"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Filmes em Cartaz"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- ScrollView para a lista de filmes -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textFilmesEmCartaz"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/filmesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/filme1_adaonegro"
+                android:layout_width="200dp"
+                android:layout_height="165dp"
+                android:src="@drawable/filme1_adaonegro" />
+
+            <ImageView
+                android:id="@+id/filme2_wakanda"
+                android:layout_width="200dp"
+                android:layout_height="148dp"
+                android:src="@drawable/filme2_wakanda" />
+
+            <ImageView
+                android:id="@+id/filme3_luzdodeminio"
+                android:layout_width="200dp"
+                android:layout_height="162dp"
+                android:src="@drawable/filme3_luzdodeminio" />
+
+            <ImageView
+                android:id="@+id/filme4_onepiece"
+                android:layout_width="200dp"
+                android:layout_height="167dp"
+                android:src="@drawable/filme4_onepiece" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

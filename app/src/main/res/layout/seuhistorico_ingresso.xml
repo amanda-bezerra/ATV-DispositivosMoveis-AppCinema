@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundopedidodeingressos">
+
+    <!-- Botão de voltar -->
+    <ImageView
+        android:id="@+id/botaoVoltarHistorico"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/icone_voltar"
+        android:contentDescription="Botão de Voltar" />
+
+    <!-- Título da tela -->
+    <TextView
+        android:id="@+id/tituloHistorico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Seu Histórico De Pedidos"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Histórico de pedidos -->
+    <LinearLayout
+        android:id="@+id/historicoPedidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tituloHistorico"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Pedido Wakanda Para Sempre -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_borde">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Wakanda Para Sempre"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="17/11"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Pedido A Luz do Demônio -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/rounded_borde">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="A Luz Do Demônio"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="13/11"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

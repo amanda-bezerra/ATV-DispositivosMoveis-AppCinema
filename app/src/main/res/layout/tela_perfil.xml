@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundoapp"
+    android:padding="16dp">
+
+    <!-- Botão de voltar -->
+    <ImageView
+        android:id="@+id/botaoVoltarPerfil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/icone_voltar"
+        android:contentDescription="Botão de voltar" />
+
+    <!-- Texto "Perfil" centralizado no topo -->
+    <TextView
+        android:id="@+id/tituloPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Perfil"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Imagem do ícone de perfil -->
+    <ImageView
+        android:id="@+id/imagemPerfil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tituloPerfil"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/iconedeperfiltelausuario"
+        android:contentDescription="Ícone de perfil" />
+
+    <!-- Nome do usuário -->
+    <TextView
+        android:id="@+id/nomeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagemPerfil"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Nome do usuário"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Container para centralizar os botões -->
+    <LinearLayout
+        android:id="@+id/containerBotoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nomeUsuario"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+
+        <!-- Botão Meus Ingressos -->
+        <ImageView
+            android:id="@+id/botaoMeusIngressos"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/btn_meus_ingressos"
+            android:contentDescription="Meus Ingressos" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

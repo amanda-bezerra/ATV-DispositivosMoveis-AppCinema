@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Gradiente linear usando cores definidas no colors.xml -->
+    <gradient
+        android:startColor="@color/botao_entrar_start"
+        android:endColor="@color/botao_entrar_end"
+        android:angle="0"
+        android:type="linear" />
+
+    <!-- Borda arredondada -->
+    <corners android:radius="50dp" />
+</shape>

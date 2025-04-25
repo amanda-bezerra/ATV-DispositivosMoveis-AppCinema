@@ -1,0 +1,150 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_da_tela_de_login"
+    android:padding="16dp">
+
+    <!-- Botão Voltar ao lado do Texto "Cadastrar-se" -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btn_voltar"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:contentDescription="Voltar"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <!-- Texto "Cadastrar-se" -->
+        <TextView
+            android:id="@+id/cadastro_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar-se"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Campo de Nome -->
+    <LinearLayout
+        android:id="@+id/nome_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cadastro_text"
+        android:layout_marginTop="198dp"
+        android:orientation="horizontal"
+        android:background="@drawable/borda_editar_texto"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icone_perfil_de_usuario" />
+
+        <EditText
+            android:id="@+id/nome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:hint="Nome"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <!-- Campo de Email -->
+    <LinearLayout
+        android:id="@+id/email_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nome_container"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:background="@drawable/borda_editar_texto"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icone_de_email" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:hint="Email"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <!-- Campo de Senha -->
+    <LinearLayout
+        android:id="@+id/senha_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_container"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:background="@drawable/borda_editar_texto"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icone_senha" />
+
+        <EditText
+            android:id="@+id/senha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:hint="Senha"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <!-- Checkbox Aceitar Termos -->
+    <CheckBox
+        android:id="@+id/aceitar_termos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/senha_container"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Aceitar termos"
+        android:buttonTint="@color/stroke_cor_checkbox"
+        android:textColor="@android:color/white" />
+
+    <!-- Botão Cadastrar -->
+    <Button
+        android:id="@+id/btn_cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aceitar_termos"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/botao_entrar"
+        android:text="Cadastrar"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

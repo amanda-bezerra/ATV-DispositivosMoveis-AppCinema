@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tituloDialogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Pedido gerado!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/subtituloDialogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tituloDialogo"
+        android:layout_centerHorizontal="true"
+        android:text="Agora você só precisa finalizar o pagamento"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/imagemQRCodeDialogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/subtituloDialogo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/nubank"
+        android:contentDescription="QR Code para pagamento"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/instrucaoDialogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagemQRCodeDialogo"
+        android:layout_centerHorizontal="true"
+        android:text="Utilize o app do seu banco para escanear o código pix ou colar a chave aleatória e efetuar o pagamento"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/botaoFecharDialogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instrucaoDialogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Fechar"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

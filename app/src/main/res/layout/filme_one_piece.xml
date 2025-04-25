@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/telafundoonepiece">
+
+    <!-- Botão de voltar -->
+    <ImageView
+        android:id="@+id/botaoVoltar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/icone_voltar"
+        android:contentDescription="Botão de Voltar" />
+
+    <!-- Título do filme -->
+    <TextView
+        android:id="@+id/tituloFilme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="ONE PIECE FILM: RED"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Sinopse do filme -->
+    <TextView
+        android:id="@+id/sinopseFilme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tituloFilme"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Luffy e seus amigos embarcam em uma nova aventura para enfrentar um inimigo poderoso e salvar o mundo."
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!-- Duração do filme -->
+    <TextView
+        android:id="@+id/duracaoFilme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sinopseFilme"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:text="Duração: 1h 55m"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Valor do ingresso -->
+    <TextView
+        android:id="@+id/valorIngresso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/duracaoFilme"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:text="Valor do ingresso: R$ 25,00"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Botão de compra -->
+    <ImageView
+        android:id="@+id/botaoImagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/btncompraringresso"
+        android:contentDescription="Botão de Comprar Ingresso" />
+
+</RelativeLayout>

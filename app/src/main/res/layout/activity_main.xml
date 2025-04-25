@@ -1,0 +1,128 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_da_tela_de_login"
+    android:padding="16dp">
+
+    <!-- Texto "Faça seu login" -->
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:text="Faça seu login"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <!-- Campo de Email -->
+    <LinearLayout
+        android:id="@+id/email_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_text"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/borda_editar_texto"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icone_de_email" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:hint="Email"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <!-- Campo de Senha -->
+    <LinearLayout
+        android:id="@+id/senha_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_container"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:background="@drawable/borda_editar_texto"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icone_senha" />
+
+        <EditText
+            android:id="@+id/senha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:hint="Senha"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <!-- Checkbox Lembrar a senha -->
+    <CheckBox
+        android:id="@+id/lembrar_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/senha_container"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Lembrar a senha"
+        android:buttonTint="@color/stroke_cor_checkbox"
+        android:textColor="@android:color/white" />
+
+    <!-- Botão Entrar -->
+    <Button
+        android:id="@+id/btn_entrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lembrar_senha"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Entrar"
+        android:background="@drawable/botao_entrar"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+
+
+    <!-- Links para Inscrever-se e Esqueceu a senha -->
+    <TextView
+        android:id="@+id/text_view_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_entrar"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Não tem uma conta? Inscrever-se"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_view_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_register"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Esqueceu sua senha?"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+</RelativeLayout>

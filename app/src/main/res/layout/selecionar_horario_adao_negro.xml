@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundofilmeselecionado">
+
+    <!-- Botão de Voltar -->
+    <ImageView
+        android:id="@+id/botaoVoltarHorario"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/icone_voltar"
+        android:contentDescription="Botão de Voltar" />
+
+    <!-- Título "Qual Horário?" -->
+    <TextView
+        android:id="@+id/tituloSelecionarHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:text="Qual Horário?"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Contêiner de horários -->
+    <LinearLayout
+        android:id="@+id/horariosContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tituloSelecionarHorario"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Horário 17:00 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_borde"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/relogio_desenho" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="17:00"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/horario1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white" />
+        </LinearLayout>
+
+        <!-- Horário 21:00 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_borde"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/relogio_desenho" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="21:00"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/horario2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botão Finalizar -->
+    <ImageView
+        android:id="@+id/btnFinalizarHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/btn_finalizar"
+        android:contentDescription="Botão Finalizar" />
+</RelativeLayout>
