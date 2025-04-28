@@ -38,5 +38,6 @@ Este projeto foi desenvolvido para praticar:
 - Simulação de fluxo de dados em aplicativos móveis
 
 ---
+https://www.mermaidchart.com/raw/3b757567-d884-40f2-9924-fd33f2c3401d?theme=light&version=v0.1&format=svg
 
 > Projeto criado por **Amanda Bezerra** como parte da formação acadêmica em Ciência da Computação 🎓.
